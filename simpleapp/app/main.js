@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+
+import config from '../config';
 
 import InventItemList from './component/InventItemList';
 import InventItem from './component/InventItem';
+import NavBar from './component/nav/navbar';
+import SideNav from './component/nav/sidenav';
 
 var data = [{
         id: 1,
@@ -32,24 +36,51 @@ var data = [{
     }
 ];
 
-ReactDOM.render(
-    <InventItemList header='Номенклатура' items={data} />,
-    document.getElementById('content'));
+var itemData = {
+    id: 1,
+    name: 'Гвоздь',
+    description: 'Материал - нержавеющая сталь',
+    category: 'Крепеж'
+};
+
+var menuItems = [{
+                    id: 1,
+                    label: config.menuInventory,
+                    active: true
+                }, {
+                    id: 2,
+                    label: config.menuWarehouse,
+                    active: false
+                }, {
+                    id: 3,
+                    label: config.menuSettings,
+                    active: false
+                }];
+
+class App extends Component {
+
+    render() {
+        return (
+            <div>
+                <NavBar appName={config.appName} />
+                <div className='row'>
+                    <div className='col-md-2'>
+                        <SideNav items={menuItems} />
+                    </div>
+                    <div className='col-md-8'>
+                        <InventItemList header={config.inventory} items={data} />
+                    </div>
+                </div>
+            </div>
+            );
+    }
+}
+
+ReactDOM.render(<App />, document.getElementById('content'));
+
+// <InventItem header={config.inventory} item={itemData} />
 
 
-// var data = {
-//         id: 1,
-//         name: 'Гвоздь',
-//         description: 'Материал - нержавеющая сталь',
-//         category: 'Крепеж'
-//     };
-
-
-// ReactDOM.render(
-//     < InventItem item={data} />,
-//     document.getElementById('content'));
 
 
 
-
-    

@@ -1,3 +1,7 @@
 {
-  "appName": "SipmleApp"
+  "appName": "SipmleApp",
+  "inventory": "Номенклатура",
+  "menuInventory": "Номенклатура",
+  "menuWarehouse": "Склады",
+  "menuSettings": "Настройки"
 }

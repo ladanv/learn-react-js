@@ -7,7 +7,9 @@ const Panel = (props) =>
         {(() => { 
             return props.header ? <PanelHeading header={props.header} /> : null;
         })()}
-        {props.children}
+        <div className='panel-body'>
+            {props.children}
+        </div>
     </div>;
 
 Panel.propTypes = {

@@ -4,9 +4,7 @@ import ListItem from './ListItem';
 
 const ListGroup = ({ items }) => 
     <div className='list-group'>
-        { items.map(function(item) {
-            return <ListItem key={item.id} item={item} />;
-        })}
+        {items.map((item) =>  <ListItem key={item.id} item={item} />)}
     </div>;
 
 ListGroup.propTypes = {
