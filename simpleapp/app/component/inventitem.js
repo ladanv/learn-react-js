@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import Form from './Form';
-import InputFormGroup from './InputFormGroup';
-import TextFormGroup from './TextFormGroup';
+import Form from './form/Form';
+import InputFormGroup from './form/InputFormGroup';
+import TextFormGroup from './form/TextFormGroup';
 
 const InventItem = ({ item }) => (
     <Form>

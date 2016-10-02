@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import Panel from './Panel';
-import ListGroup from './ListGroup';
+import Panel from './panel/Panel';
+import ListGroup from './list/ListGroup';
 
 const InventItemList = (props) => {
 
