@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import InventItemList from './component/InventItemList'
+import InventItemList from './component/InventItemList';
+import InventItem from './component/InventItem';
 
 var data = [{
         id: 1,
@@ -31,6 +32,19 @@ var data = [{
     }
 ];
 
+// ReactDOM.render(
+//     <InventItemList header='Номенклатура' items={data} />,
+//     document.getElementById('content'));
+
+
+var data = {
+        id: 1,
+        name: 'Гвоздь',
+        description: 'Материал - нержавеющая сталь',
+        category: 'Крепеж'
+    };
+
+
 ReactDOM.render(
-    <InventItemList header='Номенклатура' items={data} />,
+    < InventItem item={data} />,
     document.getElementById('content'));
