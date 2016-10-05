@@ -3,5 +3,6 @@
   "inventory": "Номенклатура",
   "menuInventory": "Номенклатура",
   "menuWarehouse": "Склады",
-  "menuSettings": "Настройки"
+  "menuSettings": "Настройки",
+  "inventoryListIsEmptyMsg": "Список номенклатуры пуст"
 }

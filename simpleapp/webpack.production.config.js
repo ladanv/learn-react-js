@@ -2,7 +2,7 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var config = {
-  entry: __dirname + '/app/main.js',
+  entry: __dirname + '/app/index.js',
 
   output: {
     path: __dirname + '/build',

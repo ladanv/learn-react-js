@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PropTypes } from 'react';
 
 import Panel from './panel/Panel';
 import Form from './form/Form';
@@ -19,10 +19,10 @@ const InventItem = ({ header, item }) => (
 );
 
 InventItem.propTypes = {
-    item:  React.PropTypes.shape({
-        name: React.PropTypes.string,
-        category: React.PropTypes.string,
-        description: React.PropTypes.string
+    item:  PropTypes.shape({
+        name: PropTypes.string,
+        category: PropTypes.string,
+        description: PropTypes.string
     })
 };
 

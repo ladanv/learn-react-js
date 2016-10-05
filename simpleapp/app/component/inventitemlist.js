@@ -1,24 +1,44 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 
+import config from '../../config';
 import Panel from './panel/Panel';
 import ListGroup from './list/ListGroup';
 
-const InventItemList = (props) => {
+class InventItemList extends Component {
 
-    var element = !props.items || props.items.length < 1 
-        ? <p>Список номенклатуры пуст</p>
-        : <ListGroup items={props.items} />;
+    constructor(props) {
+        super(props);
 
-    return (
-            <Panel header={props.header} >
+        this.state = {
+            items: []
+        };
+    }
+
+    componentDidMount() {
+        this.serverRequest = $.get('', function (result) {
+            this.setState({
+                items: result
+            });
+        }.bind(this));
+    }
+
+    componentWillUnmount() {
+        this.serverRequest.abort();
+    }
+
+    render() {
+        var items = this.state.items;
+        var element = !items || items.length < 1 
+            ? <p>{config.inventoryListIsEmptyMsg}</p>
+            : <ListGroup items={items} />;
+
+        return (
+            <Panel header={config.inventory} >
                 {element}                
             </Panel>
         );
+    }
 }
-
-Panel.propTypes = {
-    header: React.PropTypes.string,
-    items: React.PropTypes.array
-};
 
 export default InventItemList;
