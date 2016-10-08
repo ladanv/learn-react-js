@@ -16,11 +16,7 @@ class InventItemList extends Component {
     }
 
     componentDidMount() {
-        this.serverRequest = $.get('', function (result) {
-            this.setState({
-                items: result
-            });
-        }.bind(this));
+        this.loadInventItemsFromServer();
     }
 
     componentWillUnmount() {
@@ -29,15 +25,23 @@ class InventItemList extends Component {
 
     render() {
         var items = this.state.items;
-        var element = !items || items.length < 1 
+        var element = !items || items.length < 1
             ? <p>{config.inventoryListIsEmptyMsg}</p>
             : <ListGroup items={items} />;
 
         return (
             <Panel header={config.inventory} >
-                {element}                
+                {element}
             </Panel>
         );
+    }
+
+    loadInventItemsFromServer() {
+        this.serverRequest = $.get(config.apiUrl + '/inventory', function (result) {
+            this.setState({
+                items: result
+            });
+        }.bind(this));
     }
 }
 

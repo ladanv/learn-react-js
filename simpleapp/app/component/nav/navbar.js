@@ -1,22 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-const NavBar = ({ appName }) => (
+import config from '../../../config';
+
+const NavBar = () => (
     <nav className='navbar navbar-inverse'>
         <div className='container-fluid'>
             <div className='navbar-header'>
                 <a className='navbar-brand' href='#'>
-                    {appName}
+                    {config.appName}
                 </a>
             </div>
             <form className='navbar-form navbar-left' role='search'>
                 <div className='form-group'>
-                    <input type='text' className='form-control' placeholder='Search' />
+                    <input type='text' className='form-control' placeholder={config.navBarSearchPlaceholder} />
                 </div>
-                <button type='submit' className='btn btn-default'>Submit</button>
+                <button type='submit' className='btn btn-default'>{config.navBarBtnSearch}</button>
             </form>
 
         </div>
     </nav>
-    );
+);
 
 export default NavBar;

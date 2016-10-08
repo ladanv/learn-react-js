@@ -12,9 +12,8 @@ render(
   <Router history={browserHistory}>
     <Route path='/' component={App}>
       <IndexRoute component={Home} />
-      <Route path='inventory' component={InventItemList} >
-        <Route path='/inventory/:itemId' component={InventItem} />
-      </Route>
+      <Route path='/inventory' component={InventItemList} />
+      <Route path='/inventory/:itemId' component={InventItem} />
     </Route>
   </Router>,
   document.getElementById('root')

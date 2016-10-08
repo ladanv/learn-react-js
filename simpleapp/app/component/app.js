@@ -36,7 +36,7 @@ class App extends Component {
     render() {
         return (
             <div>
-                <NavBar appName={config.appName} />
+                <NavBar />
                 <div className='row'>
                     <div className='col-md-2'>
                         <SideNav items={menuItems} />
@@ -49,6 +49,5 @@ class App extends Component {
         );
     }
 }
-// <InventItem header={config.inventory} item={itemData} />
 
 export default App;

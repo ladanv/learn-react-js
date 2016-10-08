@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PropTypes } from 'react';
 
 const TextFormGroup = ({ id, label, placeholder, value }) => (
     <div className='form-group'>
@@ -6,13 +6,13 @@ const TextFormGroup = ({ id, label, placeholder, value }) => (
         <textarea id={id} className='form-control' rows="3" placeholder={placeholder}
             defaultValue={value} />
     </div>
-    );
+);
 
 TextFormGroup.propTypes = {
-    id: React.PropTypes.string.isRequired,
-    label: React.PropTypes.string.isRequired,
-    placeholder: React.PropTypes.string,
-    value: React.PropTypes.string
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired,
+    placeholder: PropTypes.string,
+    value: PropTypes.string
 };
 
 export default TextFormGroup;

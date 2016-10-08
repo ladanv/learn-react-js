@@ -1,17 +1,19 @@
-import React, { Component } from 'react';
+import React, { PropTypes } from 'react';
+import { Link } from 'react-router';
 
-const ListItem = ({ item }) =>
-    <a href={'/inventory-item/' + item.id} className='list-group-item'>
+const ListItem = ({ item }) => (
+    <Link to={item.url} className='list-group-item'>
         <h5 className='list-group-item-heading'>{item.name} <small>{item.category}</small></h5>
         <p className='list-group-item-text'>{item.description}</p>
-    </a>;
+    </Link>
+);
 
 ListItem.propTypes = {
-    item: React.PropTypes.shape({
-        id: React.PropTypes.number.isRequired,
-        name: React.PropTypes.string,
-        description: React.PropTypes.string,
-        category: React.PropTypes.string
+    item: PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string,
+        description: PropTypes.string,
+        category: PropTypes.string
     })
 };
 

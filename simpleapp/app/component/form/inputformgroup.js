@@ -1,21 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-const InputFormGroup = ({ id, label, placeholder, value }) => (
+const InputFormGroup = (props) => (
     <div className='form-group'>
-        <label htmlFor={id}>{label}</label>
-        <input id={id} type='text' className='form-control' 
-            placeholder={placeholder}
-            defaultValue={value} />
+        <label htmlFor={props.id}>{props.label}</label>
+        <input id={props.id} type='text' className='form-control'
+            placeholder={props.placeholder}
+            defaultValue={props.value} />
     </div>
-    );
+);
 
 InputFormGroup.propTypes = {
-    item: React.PropTypes.shape({
-        id: React.PropTypes.number.isRequired,
-        label: React.PropTypes.string,
-        placeholder: React.PropTypes.string,
-        value: React.PropTypes.string
-    })
+    id: React.PropTypes.string.isRequired,
+    label: React.PropTypes.string,
+    placeholder: React.PropTypes.string,
+    value: React.PropTypes.string
 };
 
 export default InputFormGroup;
