@@ -5,31 +5,19 @@ import config from '../../config';
 import NavBar from './nav/navbar';
 import SideNav from './nav/sidenav';
 
-
-var itemData = {
-    id: 1,
-    name: 'Гвоздь',
-    description: 'Материал - нержавеющая сталь',
-    category: 'Крепеж'
-};
-
 var menuItems = [{
     id: 1,
     label: config.menuInventory,
-    active: true,
     url: '/inventory'
 }, {
     id: 2,
     label: config.menuWarehouse,
-    active: false,
     url: '/warehouse'
 }, {
     id: 3,
     label: config.menuSettings,
-    active: false,
     url: '/settings'
 }];
-
 
 class App extends Component {
 

@@ -8,15 +8,25 @@ class SideNav extends Component {
         super(props);
 
         this.state = {
-            menuItems: props.items
+            activeMenuItemId: null
         };
+    }
+
+    handleActiveMenuItemChange(id) {
+        console.log('handleClick', id);
+        this.setState({activeMenuItemId: id});
     }
 
     render() {
         return (
             <ul className='nav nav-pills nav-stacked'>
-                { this.state.menuItems.map((menuItem) =>
-                    <SideNavItem key={menuItem.id} item={menuItem} />
+                { this.props.items.map((menuItem) =>
+                    <SideNavItem
+                        key={menuItem.id}
+                        item={menuItem}
+                        active={this.state.activeMenuItemId === menuItem.id}
+                        onActiveChange={this.handleActiveMenuItemChange.bind(this)}
+                        />
                 )}
             </ul>
         );
