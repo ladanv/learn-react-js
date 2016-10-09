@@ -6,15 +6,6 @@ class SideNav extends Component {
 
     constructor(props) {
         super(props);
-
-        this.state = {
-            activeMenuItemId: null
-        };
-    }
-
-    handleActiveMenuItemChange(id) {
-        console.log('handleClick', id);
-        this.setState({activeMenuItemId: id});
     }
 
     render() {
@@ -24,8 +15,7 @@ class SideNav extends Component {
                     <SideNavItem
                         key={menuItem.id}
                         item={menuItem}
-                        active={this.state.activeMenuItemId === menuItem.id}
-                        onActiveChange={this.handleActiveMenuItemChange.bind(this)}
+                        active={new RegExp('^\\' + menuItem.url).test(this.props.location.pathname)}
                         />
                 )}
             </ul>

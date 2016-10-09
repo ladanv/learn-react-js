@@ -27,7 +27,7 @@ class App extends Component {
                 <NavBar />
                 <div className='row'>
                     <div className='col-md-2'>
-                        <SideNav items={menuItems} />
+                        <SideNav items={menuItems} location={this.props.location} />
                     </div>
                     <div className='col-md-8'>
                         {this.props.children}
