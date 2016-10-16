@@ -34,10 +34,10 @@ var config = {
   postcss: [autoprefixer],
 
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: __dirname + "/src/index.tmpl.html"
     }),
-    new webpack.HotModuleReplacementPlugin(),
     new ExtractTextPlugin('style.css', {
       allChunks: false
     })

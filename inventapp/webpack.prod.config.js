@@ -35,9 +35,9 @@ var config = {
   plugins: [
     // add description to generated files (For example license info)
     new webpack.BannerPlugin("ISC license. Author - Vitaliy Ladan"),
-    new HtmlWebpackPlugin({
-      template: __dirname + "/src/index.tmpl.html"
-    }),
+    // if an error occures during building then don't create/write files
+    // to the output directory
+    new webpack.NoErrorsPlugin(),
     // Webpack gives IDs to identify your modules.
     // With this plugin, Webpack will analyze and prioritize often
     // used modules assigning them the smallest ids.
@@ -45,6 +45,9 @@ var config = {
     // UglifyJS is a JavaScript compressor/minifier.
     new webpack.optimize.UglifyJsPlugin(),
     // add hash to the end of file (to remove caching issues)
+    new HtmlWebpackPlugin({
+      template: __dirname + "/src/index.tmpl.html"
+    }),
     new ExtractTextPlugin('style-[hash].css', {
       allChunks: false
     })
