@@ -1,0 +1,17 @@
+{
+  "appName": "SipmleApp",
+  "apiUrl": "http://localhost:3004",
+  "inventory": "Номенклатура",
+  "menuInventory": "Номенклатура",
+  "menuWarehouse": "Склады",
+  "menuSettings": "Настройки",
+  "inventoryListIsEmptyMsg": "Список номенклатуры пуст",
+  "inventItemName": "Наименование",
+  "inventItemNamePlaceholder": "Краткое наименование",
+  "inventItemDescription": "Описание",
+  "inventItemDescriptionPlaceholder": "Подробное описание",
+  "inventItemCategory": "Категория",
+  "inventItemCategoryPlaceholder": "Категория",
+  "navBarBtnSearch": "Искать",
+  "navBarSearchPlaceholder": "Поиск"
+}
