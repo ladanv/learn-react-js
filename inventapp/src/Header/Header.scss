@@ -1,5 +1,5 @@
-@import "../../colors";
-@import "../../globals";
+@import "../colors";
+@import "../globals";
 
 .header {
 	border-bottom: 1px solid $primary-border-color;
@@ -55,10 +55,5 @@
 		display: table-cell;
 		width: 1%;
 		vertical-align: middle;
-	}
-
-	.icon {
-		display: inline-block;
-		fill: $icon-color;
 	}
 }
