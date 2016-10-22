@@ -4,30 +4,30 @@ import icons from './icons.svg';
 
 class Icon extends Component {
 
-  render({ name }) {
+  render() {
     const iconSize = this.getSize();
     return (
       <svg className={style.icon} width={iconSize.width} height={iconSize.height}>
-        <use xlinkHref={icons + '#' + name} />
+        <use xlinkHref={icons + '#' + this.props.name} />
       </svg>
     );
   }
 
   getSize() {
     const { size, width, height } = this.props;
-    var iWidth, iHeight;
+    var iconWidth, iconHeight;
 
     if (width && height) {
-      iWidth = width;
-      iHeight = height;
+      iconWidth = width;
+      iconHeight = height;
     } else if (size) {
       if (size == 'small') {
-        iWidth = iHeight = 12;
+        iconWidth = iconHeight = 12;
       } else if (size == 'large') {
-        iWidth = iHeight = 24;
+        iconWidth = iconHeight = 24;
       }
     } else {
-      iWidth = iHeight = 16;
+      iconWidth = iconHeight = 16;
     }
 
     return { width: iconWidth, height: iconHeight };
