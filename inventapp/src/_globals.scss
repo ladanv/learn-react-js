@@ -1,5 +1,5 @@
 // **********************************
-// variables
+// global variables
 // **********************************
 
 $primary-font: Roboto, arial, sans-serif;
@@ -12,32 +12,3 @@ $logo-font-size: 20px;
 
 $header-height: 50px;
 $nav-width: 220px;
-
-// **********************************
-// Reset
-// **********************************
-
-* {
-	box-sizing: border-box;
-}
-
-html {
-	font-family: $primary-font;
-	font-size: $primary-font-size;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-	// margin: auto;
-	// min-width: $body-min-width;
-	// max-width: $body-max-width;
-}
-
-a {
-	text-decoration: none;
-}
-
-input, button {
-	outline: none;
-}

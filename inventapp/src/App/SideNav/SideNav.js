@@ -1,37 +1,32 @@
 import React from 'react';
-
+import Section from './Section';
+import NavItem from './NavItem';
 import style from './SideNav.scss';
 
 const SideNav = () => (
-  <nav className="menu">
-    <section>
-      <h5>ЛОМБАРД</h5>
-      <ul>
-        <li><a href="">Клиенты</a></li>
-        <li><a href="">Кредиты</a></li>
-        <li><a href="">Скупки</a></li>
-        <li><a href="">Инкассации</a></li>
-        <li><a href="">Актуальные цены</a></li>
-      </ul>
-    </section>
-    <section>
-      <h5>КАССА</h5>
-      <ul>
-        <li><a href="">РКО</a></li>
-        <li><a href="">ПКО</a></li>
-      </ul>
-    </section>
-    <section>
-      <h5>НАСТРОЙКИ</h5>
-      <ul>
-        <li><a href="">Прайс листы</a></li>
-        <li><a href="">Категории имущества</a></li>
-        <li><a href="">Пользователи</a></li>
-        <li><a href="">Подразделения</a></li>
-        <li><a href="">Общие</a></li>
-      </ul>
-    </section>
-  </nav>
+  <aside className={style.sidenav}>
+    <ul>
+      <Section title='Справочники'>
+        <NavItem label='Клиенты' url='/clients' />
+        <NavItem label='Номенклатура' url='/inventory-items' />
+        <NavItem label='Склады' url='/warehouses' />
+      </Section>
+      <Section title='Операции'>
+        <NavItem label='Накладные' url='/invoices' />
+      </Section>
+      <Section title='Касса'>
+        <NavItem label='Кассовые ордеры' url='/cash-orders' />
+      </Section>
+      <Section title='Настройки'>
+        <NavItem label='Прайс листы' url='/price-lists' />
+        <NavItem label='Категории имущества' url='/invent-categories' />
+        <NavItem label='Пользователи' url='/users' />
+        <NavItem label='Подразделения' url='/subdivisions' />
+        <NavItem label='Теги' url='/tags' />
+        <NavItem label='Общие' url='/general' />
+      </Section>
+    </ul>
+  </aside>
 );
 
 export default SideNav;
