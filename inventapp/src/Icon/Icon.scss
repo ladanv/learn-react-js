@@ -1,6 +1,7 @@
 @import "../colors";
+@import "../globals";
 
 .icon {
   display: inline-block;
-  fill: $icon-color;
+  fill: $color-icon;
 }

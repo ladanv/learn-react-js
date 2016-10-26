@@ -1,9 +1,10 @@
+@import "../../colors";
 @import "../../globals";
 
 .section {
 	padding-bottom: 1.4 * $unit;
 	.header {
-		color: #cc181e;
+		color: $color-primary;
 		font-size: $font-size-tiny;
 		font-weight: $font-weight-semi-bold;
 		text-transform: uppercase;

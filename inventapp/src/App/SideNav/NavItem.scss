@@ -1,3 +1,4 @@
+@import "../../colors";
 @import "../../globals";
 
 $nav-item-font-size: .9 * $unit;
@@ -15,11 +16,11 @@ $nav-item-font-size: .9 * $unit;
 	color: #222;
 	&:hover {
 		background-color: #444;
-		color: #fff;
+		color: $color-white;
 	}
 }
 
 .active {
 	background-color: #cc181e;
-	color: #fff;
+	color: $color-white;
 }

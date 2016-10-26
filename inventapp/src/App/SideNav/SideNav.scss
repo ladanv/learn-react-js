@@ -2,7 +2,7 @@
 @import "../../globals";
 
 .sidenav {
-	border-right: (.1 * $unit) solid $primary-border-color;
+	border-right: (.1 * $unit) solid $color-border;
 	top: $header-height;
 	bottom: 0;
 	left: 0;

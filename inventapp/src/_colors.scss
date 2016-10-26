@@ -1,5 +1,31 @@
+// **********************************
+// Color definitions
+// **********************************
 
-$primary-background-color: white;
-$primary-border-color: #e8e8e8;
+// Red
+$palette-red-50: rgb(232,27,27);
+$palette-red-100: rgb(218,22,28);
+$palette-red-200: rgb(212,24,31);
+$palette-red-300: rgb(204,24,30);
+$palette-red-400: rgb(193,20,26);
+$palette-red-500: rgb(182,21,26);
+$palette-red-600: rgb(167,21,26);
+$palette-red-700: rgb(152,18,23);
+$palette-red-800: rgb(145,17,21);
+$palette-red-900: rgb(134,15,19);
 
-$icon-color: #7A7A7A;
+
+// Gray
+$palette-grey-50: rgb(232,232,232);
+$palette-grey-100: rgb(170,170,170);
+$palette-grey-200: rgb(153,153,153);
+$palette-grey-300: rgb(136,136,136);
+$palette-grey-400: rgb(122,122,122);
+$palette-grey-500: rgb(119,119,119);
+$palette-grey-600: rgb(102,102,102);
+$palette-grey-700: rgb(85,85,85);
+$palette-grey-800: rgb(68,68,68);
+$palette-grey-900: rgb(34,34,34);
+
+$color-black: rgb(0,0,0);
+$color-white: rgb(255,255,255);
