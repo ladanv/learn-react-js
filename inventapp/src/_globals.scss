@@ -2,13 +2,23 @@
 // global variables
 // **********************************
 
-$primary-font: Roboto, arial, sans-serif;
-$primary-font-size: 16px;
+//-- Sizing
+$unit: 1rem;
 
-$logo-font-size: 20px;
+// -- Fonts
+$preferred-font: "Roboto", "Helvetica", "Arial", sans-serif;
+$font-size-tiny: .7 * $unit;
+$font-size-small: .8 * $unit;
+$font-size-normal: $unit;
+$font-size-big: 1.2 * $unit;
+$font-weight-thin: 300;
+$font-weight-normal: 400;
+$font-weight-semi-bold: 500;
+$font-weight-bold: 700;
 
 // $body-min-width: 1024px;
 // $body-max-width: 1024px; //1280px;
 
-$header-height: 50px;
-$nav-width: 220px;
+//-- layout
+$header-height: 3.6 * $unit;
+$nav-width: 14 * $unit; //220px;

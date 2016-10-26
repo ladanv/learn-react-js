@@ -1,8 +1,10 @@
 @import "../../colors";
 @import "../../globals";
 
+$logo-font-size: 1.8 * $unit;
+
 .header {
-	border-bottom: 1px solid $primary-border-color;
+	border-bottom: (.1 * $unit) solid $primary-border-color;
 	background-color: $primary-background-color;
 	top: 0;
 	left: 0;
@@ -13,19 +15,19 @@
 
 .logo {
 	float: left;
-	padding: $header-height / 2 - $logo-font-size / 2 15px;
+	padding: .9 * $unit;
 	font-size: $logo-font-size;
-	font-weight: 700;
+	font-weight: $font-weight-bold;
 	color: #777;
 }
 
 .navbar {
 	height: $header-height;
 	margin-left: $nav-width;
-	padding-top: 10px;
+	padding-top: .8 * $unit;
 
 	.centre {
-		max-width: 600px;
+		max-width: 45 * $unit;
 		width: 100%;
 	}
 
@@ -43,12 +45,11 @@
 
 	.field {
 		display: table-cell;
-		height: 28px;
 		width: 100%;
-		padding: 2px 6px;
-		font-size: 12px;
-		font-weight: 500;
-		border: 1px solid #d3d3d3;
+		padding: (.3 * $unit) (.4 * $unit);
+		font-size: $font-size-normal;
+		font-weight: $font-weight-semi-bold;
+		border: (.1 * $unit) solid #d3d3d3;
 	}
 
 	.buttonGroup {

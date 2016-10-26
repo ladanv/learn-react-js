@@ -1,14 +1,15 @@
+@import "../globals";
+
 .button {
 	cursor: pointer;
-	border-radius: 2px;
-	border: 1px solid #d3d3d3;
-	font-weight: 500;
-	height: 28px;
-	font-size: 12px;
+	border-radius: .12 * $unit;
+	border: (.1 * $unit) solid #d3d3d3;
+	font-weight: $font-weight-semi-bold;
+	height: 2 * $unit;
+	font-size: $font-size-normal;
 	background-color: #f8f8f8;
 	color: #5D5D5D;
-	margin-right: 15px;
-	padding: 0 10px;
+	margin-right: .8 * $unit;
 	&:hover {
 		background-color: #f0f0f0;
 		border-color: #c6c6c6;
@@ -49,11 +50,11 @@
 }
 
 .large {
-	height: 32px;
-	font-size: 14px;
+	height: 2.6 * $unit;
+	font-size: $font-size-big;
 }
 
 .small {
-	height: 24px;
-	font-size: 11px;
+	height: 1.6 * $unit;
+	font-size: $font-size-small;
 }

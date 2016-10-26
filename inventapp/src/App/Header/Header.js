@@ -10,7 +10,7 @@ const Header = () => (
     <a className={style.logo} href="#">Warehouse</a>
     <nav className={style.navbar}>
       <form className={style.left}>
-        <Button label='Новая накладная' bType='primary' />
+        <Button label='Новая накладная' type='primary' />
       </form>
       <Button className={style.right}>
         <Icon name='user' />

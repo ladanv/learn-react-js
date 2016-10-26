@@ -1,18 +1,17 @@
+@import "../../globals";
 
-$nav-item-height: 29px;
-$nav-item-font-size: 13px;
-$nav-item-padding: ($nav-item-height - $nav-item-font-size) / 2;
+$nav-item-font-size: .9 * $unit;
 
 .item {
 	margin-top: 2px;
 	margin-bottom: 2px;
 	display: block;
-	padding-left: 15px;
-	padding-top: floor($nav-item-padding);
-	padding-bottom: ceil($nav-item-padding);
+	padding-left: $unit;
+	padding-top: .6 * $unit;
+	padding-bottom: .6 * $unit;
 	font-size: $nav-item-font-size;
-	font-weight: 400;
-	height: $nav-item-height;
+	font-weight: $font-weight-normal;
+	height: 2 * $unit;
 	color: #222;
 	&:hover {
 		background-color: #444;

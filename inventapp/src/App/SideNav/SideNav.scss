@@ -2,11 +2,11 @@
 @import "../../globals";
 
 .sidenav {
-	border-right: 1px solid $primary-border-color;
+	border-right: (.1 * $unit) solid $primary-border-color;
 	top: $header-height;
 	bottom: 0;
 	left: 0;
-	padding: 15px;
+	padding: $unit;
 	width: $nav-width;
 	position: fixed;
 	overflow-y: auto;
