@@ -4,49 +4,34 @@
 .button {
 	cursor: pointer;
 	border-radius: .12 * $unit;
-	border: (.1 * $unit) solid #d3d3d3;
+	border: (.1 * $unit) solid $palette-grey-200;
 	font-weight: $font-weight-semi-bold;
 	height: 2 * $unit;
 	font-size: $font-size-normal;
-	background-color: #f8f8f8;
-	color: #5D5D5D;
+	background-color: $palette-grey-50;
+	color: $palette-grey-700;
 	margin-right: .8 * $unit;
 	&:hover {
-		background-color: #f0f0f0;
-		border-color: #c6c6c6;
+		background-color: rgba($palette-grey-200,.40);
+		border-color: $palette-grey-200;
 	}
 	&:active {
-		background-color: #e9e9e9;;
-		border-color: #c6c6c6;
+		background-color: rgba($palette-grey-200,.60);
+		border-color: $palette-grey-200;
 	}
 }
 
 .primary {
-	background-color: #e62117;
-	border-color: #e62117;
-	color: #fefefe;
+	background-color: $color-primary;
+	border-color: $color-primary;
+	color: $color-primary-contrast;
 	&:hover {
-		background-color: #cc181e;
-		border-color: #cc181e;
+		background-color: $palette-red-500;
+		border-color: $palette-red-500;
 	}
 	&:active {
-		background-color: #b31217;
-		border-color: #b31217;
-	}
-}
-
-.secondary {
-	background: #FFF;
-	border-color: #e62117;
-	color: #5D5D5D;
-	&:hover {
-		background-color: #cc181e;
-		border-color: #cc181e;
-		color: #fefefe;
-	}
-	&:active {
-		background-color: #b31217;
-		border-color: #b31217;
+		background-color: $palette-red-700;
+		border-color: $palette-red-700;
 	}
 }
 

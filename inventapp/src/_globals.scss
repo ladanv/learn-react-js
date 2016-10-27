@@ -17,7 +17,7 @@ $font-weight-semi-bold: 500;
 $font-weight-bold: 700;
 
 //-- Colors
-$color-divider: $palette-grey-50;
+$color-divider: $palette-grey-100;
 $color-background: $color-white;
 $color-text: $palette-grey-900;
 $color-text-secondary: $palette-grey-600;
@@ -34,4 +34,4 @@ $color-icon: $palette-grey-400;
 
 //-- layout
 $header-height: 3.6 * $unit;
-$nav-width: 14 * $unit; //220px;
+$nav-width: 14 * $unit;
