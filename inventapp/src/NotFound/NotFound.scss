@@ -1,0 +1,22 @@
+@import "../colors";
+@import "../globals";
+
+.container {
+  text-align: center;
+}
+
+.title {
+  margin-top: 5rem;
+  font-size: 3 * $unit;
+}
+
+.message {
+  margin: 3rem 10rem;
+  font-size: 2 * $unit;
+  line-height: 3rem;
+  color: $color-text-secondary;
+}
+
+.backUrl {
+  font-size: $font-size-big;
+}
