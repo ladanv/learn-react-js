@@ -1,32 +1,47 @@
-import React from 'react';
+import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router';
+import { injectIntl, defineMessages } from 'react-intl';
 import Button from '../../Button';
 import Icon from '../../Icon';
+import styles from './Header.scss';
 
-import style from './Header.scss';
+const messages = defineMessages({
+  newButtonLablel: {
+    id: 'Header.newButton.label',
+    defaultMessage: 'New invoice',
+  },
+  searchPlaceholder: {
+    id: 'Header.search.placeholder',
+    defaultMessage: 'Inventory, invoice number'
+  }
+});
 
-const Header = () => (
-  <header className={style.header}>
-    <Link to="/" className={style.logo}>Warehouse</Link>
-    <nav className={style.navbar}>
-      <form className={style.left}>
-        <Button label='Новая накладная' type='primary' />
-      </form>
-      <Button className={style.right}>
-        <Icon name='user' />
-      </Button>
-      <form className={style.centre}>
-        <div className={style.search}>
-          <input className={style.field} placeholder="Номенклатура, номер расходной/приходной накладной"></input>
-          <span className={style.buttonGroup}>
-            <Button>
-              <Icon name='search' />
-            </Button>
-          </span>
-        </div>
-      </form>
-    </nav>
-  </header>
-);
+const Header = ({ intl }) => {
+  const { formatMessage } = intl;
 
-export default Header;
+  return (
+    <header className={styles.header}>
+      <Link to="/" className={styles.logo}>Warehouse</Link>
+      <nav className={styles.navbar}>
+        <form className={styles.left}>
+          <Button label={formatMessage(messages.newButtonLablel)} type='primary' />
+        </form>
+        <Button className={styles.right}>
+          <Icon name='user' />
+        </Button>
+        <form className={styles.centre}>
+          <div className={styles.search}>
+            <input className={styles.field} placeholder={formatMessage(messages.searchPlaceholder)}></input>
+            <span className={styles.buttonGroup}>
+              <Button>
+                <Icon name='search' />
+              </Button>
+            </span>
+          </div>
+        </form>
+      </nav>
+    </header>
+  );
+}
+
+export default injectIntl(Header);

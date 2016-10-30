@@ -1,0 +1,22 @@
+{
+  "Header.newButton.label": "New invoice",
+  "Header.search.placeholder": "Inventory, invoice number",
+  "Home.intro": "The goal of this project is to learn React Js ecosystem while creating simple SPA.",
+  "NotFound.button.label": "Return back to home page",
+  "NotFound.message": "The requested page is not found. Probably, the URL you are using is incorrect.",
+  "NotFound.title": "Page not found",
+  "SideNav.cash.label": "Cash",
+  "SideNav.cashOrders.label": "Cash orders",
+  "SideNav.clients.label": "Clients",
+  "SideNav.common.label": "Common",
+  "SideNav.inventoryItems.label": "Inventory items",
+  "SideNav.invoices.label": "Invoices",
+  "SideNav.operations.label": "Operations",
+  "SideNav.priceLists.label": "Price lists",
+  "SideNav.references.label": "References",
+  "SideNav.settings.label": "Settings",
+  "SideNav.subdivisions.label": "Subdivisions",
+  "SideNav.tags.label": "Tags",
+  "SideNav.users.label": "Users",
+  "SideNav.warehouses.label": "Warehouses"
+}

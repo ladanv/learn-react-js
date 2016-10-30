@@ -1,0 +1,22 @@
+{
+  "Header.newButton.label": "Новая накладная",
+  "Header.search.placeholder": "Номенклатура, номер расходной/приходной накладной",
+  "Home.intro": "Целью данного проекта является изучение экосистемы React Js посредством разработки простого одностраничного приложения.",
+  "NotFound.button.label": "Вернуться на домашнюю страницу",
+  "NotFound.message": "Запрашиваемая страница не найдена. Возможно введен неверный адрес.",
+  "NotFound.title": "Страница не найдена",
+  "SideNav.cash.label": "Касса",
+  "SideNav.cashOrders.label": "Кассовые ордеры",
+  "SideNav.clients.label": "Клиенты",
+  "SideNav.common.label": "Общие",
+  "SideNav.inventoryItems.label": "Номенклатура",
+  "SideNav.invoices.label": "Накладные",
+  "SideNav.operations.label": "Операции",
+  "SideNav.priceLists.label": "Прайс листы",
+  "SideNav.references.label": "Справочники",
+  "SideNav.settings.label": "Настройки",
+  "SideNav.subdivisions.label": "Подразделения",
+  "SideNav.tags.label": "Теги",
+  "SideNav.users.label": "Пользователи",
+  "SideNav.warehouses.label": "Склады"
+}

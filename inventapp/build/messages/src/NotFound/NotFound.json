@@ -1,0 +1,14 @@
+[
+  {
+    "id": "NotFound.title",
+    "defaultMessage": "Page not found"
+  },
+  {
+    "id": "NotFound.message",
+    "defaultMessage": "The requested page is not found. Probably, the URL you are using is incorrect."
+  },
+  {
+    "id": "NotFound.button.label",
+    "defaultMessage": "Return back to home page"
+  }
+]

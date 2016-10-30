@@ -1,22 +1,16 @@
 import React, { Component } from 'react';
-
 import Header from './Header';
 import SideNav from './SideNav';
+import styles from './App.scss';
 
-import style from './App.scss';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header />
-        <SideNav />
-        <div className={style.main}>
-          {this.props.children}
-        </div>
-      </div>
-    );
-  }
-}
+const App = ({ children }) => (
+  <div className="App">
+    <Header />
+    <SideNav />
+    <div className={styles.main}>
+      {children}
+    </div>
+  </div>
+);
 
 export default App;

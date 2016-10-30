@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import style from './NavItem.scss';
+import styles from './NavItem.scss';
 
 const NavItem = ({ url, label }) => (
   <li>
-    <Link to={url} className={style.item} activeClassName={style.active}>
+    <Link to={url} className={styles.item} activeClassName={styles.active}>
       {label}
     </Link>
   </li>

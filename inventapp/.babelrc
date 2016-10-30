@@ -13,7 +13,11 @@
        // this is just one of them!
      }],
      ["transform-es2015-destructuring"],
-     ["transform-object-rest-spread"]
+     ["transform-object-rest-spread"],
+     ["react-intl", {
+        "messagesDir": "./build/messages",
+        "enforceDescriptions": false
+      }]
     ]}
   }
 }

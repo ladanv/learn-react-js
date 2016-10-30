@@ -1,0 +1,10 @@
+[
+  {
+    "id": "Header.newButton.label",
+    "defaultMessage": "New invoice"
+  },
+  {
+    "id": "Header.search.placeholder",
+    "defaultMessage": "Inventory, invoice number"
+  }
+]

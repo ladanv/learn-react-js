@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-
-import style from './Button.scss';
+import styles from './Button.scss';
 
 class Button extends Component {
   render() {
     const {label, type, size, children, className, ...props} = this.props;
-    const btnClasses = classNames(style.button, style[`${type}`], style[`${size}`], className);
+    const classes = classNames(styles.button, styles[`${type}`], styles[`${size}`], className);
 
     return (
-      <button className={btnClasses}>
+      <button className={classes}>
         {label || children}
       </button>
     );
