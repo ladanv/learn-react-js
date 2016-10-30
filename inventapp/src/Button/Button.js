@@ -4,7 +4,7 @@ import styles from './Button.scss';
 
 class Button extends Component {
   render() {
-    const {label, type, size, children, className, ...props} = this.props;
+    const {label, type, size, children, className} = this.props;
     const classes = classNames(styles.button, styles[`${type}`], styles[`${size}`], className);
 
     return (

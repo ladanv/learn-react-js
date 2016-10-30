@@ -9,8 +9,8 @@ import { routes } from './routes'
 import { IntlProvider, addLocaleData } from 'react-intl';
 import en from 'react-intl/locale-data/en';
 import ru from 'react-intl/locale-data/ru';
-import localeData from './../i18n/en-US.json';
-// import localeData from './../i18n/ru-RU.json';
+// import localeData from './../i18n/en-US.json';
+import localeData from './../i18n/ru-RU.json';
 
 addLocaleData([...en, ...ru]);
 
@@ -26,7 +26,7 @@ const languageWithoutRegionCode = language.toLowerCase().split(/[_-]+/)[0];
 
 // Try full locale, try locale without region code, fallback to 'en'
 // const messages = localeData[languageWithoutRegionCode] || localeData[language] || localeData.en;
-const messages = localeData || localeData.en;
+const messages = localeData;
 
 // If browser doesn't support Intl (i.e. Safari), then we manually import
 // the intl polyfill and locale data.

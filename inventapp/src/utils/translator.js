@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import { sync as globSync } from 'glob';
 import { sync as mkdirpSync } from 'mkdirp';
 
-const filePattern = './build/messages/**/*.json';
+const filePattern = './tmp/messages/**/*.json';
 const outputLanguageDataDir = './i18n/';
 
 // Aggregates the default messages that were extracted from the example app's
