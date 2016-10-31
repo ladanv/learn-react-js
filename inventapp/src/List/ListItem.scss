@@ -1,0 +1,16 @@
+@import "../colors";
+@import "../globals";
+
+.item {
+  font-size: $font-size-normal;
+  color: $palette-grey-800;
+  cursor: pointer;
+  padding: (.8 * $unit) $unit;
+	border-bottom: (.1 * $unit) solid $color-border;
+  &:last-child {
+	   border-bottom: none;
+  }
+  &:hover {
+    background-color: $palette-grey-50;
+  }
+}

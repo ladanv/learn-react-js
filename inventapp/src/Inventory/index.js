@@ -1,4 +1,7 @@
-import InventoryItems from './InventoryItems';
+import InventoryItemsContainer from './InventoryItemsContainer';
 import InventoryItemDetails from './InventoryItemDetails';
 
-export { InventoryItems, InventoryItemDetails };
+export {
+  InventoryItemsContainer as InventoryItems,
+  InventoryItemDetails
+};

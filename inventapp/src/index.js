@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import config from '../config.json';
+import axios from 'axios';
 
 import './base.scss';
 
@@ -11,6 +13,8 @@ import en from 'react-intl/locale-data/en';
 import ru from 'react-intl/locale-data/ru';
 // import localeData from './../i18n/en-US.json';
 import localeData from './../i18n/ru-RU.json';
+
+axios.defaults.baseURL = config.baseURL;
 
 addLocaleData([...en, ...ru]);
 

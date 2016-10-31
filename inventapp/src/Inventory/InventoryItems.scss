@@ -1,0 +1,9 @@
+@import "../colors";
+@import "../globals";
+
+.title {
+  font-size: $font-size-big;
+  font-weight: $font-weight-bold;
+  color: $palette-grey-700;
+  margin-bottom: 2 * $unit;
+}
