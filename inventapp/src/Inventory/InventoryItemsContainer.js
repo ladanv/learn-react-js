@@ -17,7 +17,6 @@ class InventoryItemsContainer extends Component {
   }
 
   componentWillUnmount() {
-    this.serverRequest.abort();
   }
 
   render() {

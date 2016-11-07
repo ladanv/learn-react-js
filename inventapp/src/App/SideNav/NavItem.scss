@@ -11,7 +11,7 @@
 	font-size: .9 * $unit;
 	font-weight: $font-weight-normal;
 	height: 2 * $unit;
-	color: $color-text;
+	color: $palette-grey-900;
 	&:hover {
 		background-color: $palette-grey-800;
 		color: $color-white;

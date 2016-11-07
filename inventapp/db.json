@@ -1,33 +1,39 @@
 {
-    "inventory": [{
-        "url": "/inventory/1",
-        "id": 1,
-        "name": "Гвоздь",
-        "description": "Материал - нержавеющая сталь",
-        "category": "Крепеж"
-    }, {
-        "url": "/inventory/2",
-        "id": 2,
-        "name": "Валенки",
-        "description": "Теплая и очень удобная зимняя обувь :)",
-        "category": "Обувь"
-    }, {
-        "url": "/inventory/3",
-        "id": 3,
-        "name": "Лопата",
-        "description": "Для уборки снега. Материал - пластик.",
-        "category": "Инструмент"
-    }, {
-        "url": "/inventory/4",
-        "id": 4,
-        "name": "Колоши",
-        "description": "Черного цвета, повышеный комфорт.",
-        "category": "Обувь"
-    }, {
-        "url": "/inventory/5",
-        "id": 5,
-        "name": "Молоток",
-        "description": "С гвоздодером, прорезиненая рукоять.",
-        "category": "Инструмент"
-    }]
+  "inventory": [
+    {
+      "url": "/inventory-items/1",
+      "id": 1,
+      "name": "Гвоздь",
+      "description": "Материал - нержавеющая сталь",
+      "category": "Крепеж"
+    },
+    {
+      "url": "/inventory-items/2",
+      "id": 2,
+      "name": "Валенки",
+      "description": "Теплая и очень удобная зимняя обувь :)",
+      "category": "Обувь"
+    },
+    {
+      "url": "/inventory-items/3",
+      "id": 3,
+      "name": "Лопата",
+      "description": "Для уборки снега. Материал - пластик.",
+      "category": "Инструмент"
+    },
+    {
+      "url": "/inventory-items/4",
+      "id": 4,
+      "name": "Колоши",
+      "description": "Черного цвета, повышеный комфорт.",
+      "category": "Обувь"
+    },
+    {
+      "url": "/inventory-items/5",
+      "id": 5,
+      "name": "Молоток",
+      "description": "С гвоздодером, прорезиненая рукоять.",
+      "category": "Инструмент"
+    }
+  ]
 }

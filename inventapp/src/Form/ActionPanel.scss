@@ -1,0 +1,12 @@
+@import "../colors.scss";
+@import "../globals.scss";
+
+.actionPanel {
+  border-top: (.1 * $unit) solid $palette-grey-200;
+  margin-top: 1.8 * $unit;
+  padding-top: 1.8 * $unit;
+
+  * {
+    float: right;
+  }
+}

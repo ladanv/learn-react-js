@@ -8,7 +8,7 @@ class Button extends Component {
     const classes = classNames(styles.button, styles[`${type}`], styles[`${size}`], className);
 
     return (
-      <button className={classes}>
+      <button className={classes} {...this.props} >
         {label || children}
       </button>
     );

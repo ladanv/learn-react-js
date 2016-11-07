@@ -1,7 +1,7 @@
 import InventoryItemsContainer from './InventoryItemsContainer';
-import InventoryItemDetails from './InventoryItemDetails';
+import InventoryItemDetailsContainer from './InventoryItemDetailsContainer';
 
 export {
   InventoryItemsContainer as InventoryItems,
-  InventoryItemDetails
+  InventoryItemDetailsContainer as InventoryItemDetails
 };
