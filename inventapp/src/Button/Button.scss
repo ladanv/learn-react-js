@@ -2,9 +2,9 @@
 @import "../globals";
 
 .button {
-	cursor: pointer;
 	border-radius: .12 * $unit;
 	border: (.1 * $unit) solid $palette-grey-200;
+	cursor: pointer;
 	font-weight: $font-weight-semi-bold;
 	height: 2 * $unit;
 	font-size: $font-size-normal;

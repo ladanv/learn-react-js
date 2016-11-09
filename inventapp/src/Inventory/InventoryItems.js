@@ -11,8 +11,7 @@ const InventoryItems = ({ items }) => {
       <h1 className={styles.title} >
         <FormattedMessage
           id={'InventoryItems.title'}
-          defaultMessage={'Inventory items'}
-        />
+          defaultMessage={'Inventory items'} />
       </h1>
       <List>
         {items.map((item) => (

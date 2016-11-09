@@ -14,7 +14,7 @@ $logo-font-size: 1.8 * $unit;
 
 .logo {
 	float: left;
-	padding: 0.9 * $unit;
+	padding: .9 * $unit;
 	color: $palette-grey-500;
 	font-size: $logo-font-size;
 	font-weight: $font-weight-bold;
@@ -23,7 +23,7 @@ $logo-font-size: 1.8 * $unit;
 .navbar {
 	height: $header-height;
 	margin-left: $nav-width;
-	padding-top: 0.8 * $unit;
+	padding-top: .8 * $unit;
 
 	.centre {
 		width: 100%;
@@ -55,10 +55,5 @@ $logo-font-size: 1.8 * $unit;
 		display: table-cell;
 		width: 1%;
 		vertical-align: middle;
-	}
-
-	.icon {
-		display: inline-block;
-		fill: $color-icon;
 	}
 }
